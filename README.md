@@ -13,6 +13,10 @@ npm run dev
 
 Open the Vite URL shown in the terminal. Build for production with `npm run build` or preview with `npm run preview`.
 
+## Publish on GitHub Pages
+
+The repository deploys from `main` through GitHub Actions to `https://prateekcryptorex.github.io/daymark-task-manager/`. Guest mode works without any credentials. To enable cloud sign-in and uploads on the published site, add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as repository Actions secrets. These are build-time client values; never add a Supabase `service_role` key.
+
 ## Features
 
 - Add, edit, complete, and delete tasks; filter by status, date view, or category; search task titles.
