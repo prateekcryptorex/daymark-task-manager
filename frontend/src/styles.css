@@ -44,6 +44,7 @@ button, input, select { font: inherit; }
 button { color: inherit; }
 button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #91bd4f; outline-offset: 2px; }
 button:disabled { cursor: not-allowed; }
+select, option { color: var(--ink); background-color: var(--surface); color-scheme: inherit; }
 
 .app-shell { min-height: 100vh; display: grid; grid-template-columns: 246px minmax(0, 1fr); }
 .sidebar { position: sticky; top: 0; height: 100vh; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; padding: 29px 17px 17px; background: var(--sidebar); border-right: 1px solid var(--line); z-index: 2; animation: sidebar-enter .44s cubic-bezier(.2, .75, .25, 1) both; }
@@ -244,7 +245,7 @@ kbd { display: grid; place-items: center; width: 15px; height: 16px; border: 1px
 .date-control, .category-control { display: flex; align-items: center; gap: 5px; height: 30px; padding: 0 7px; border: 1px solid var(--line); border-radius: 4px; color: var(--muted); background: var(--surface); }
 .date-control input { width: 105px; max-width: 105px; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 10px; cursor: pointer; }
 .date-control input::-webkit-calendar-picker-indicator { width: 13px; margin: 0; cursor: pointer; }
-.category-control select { width: 62px; appearance: none; border: 0; outline: 0; background: transparent; color: var(--muted-strong); font-size: 9px; cursor: pointer; }
+.category-control select { width: 62px; appearance: none; border: 0; outline: 0; background: var(--surface); color: var(--muted-strong); font-size: 9px; cursor: pointer; }
 .category-control > svg:last-child { pointer-events: none; }
 .add-submit { display: flex; align-items: center; justify-content: center; gap: 5px; height: 31px; padding: 0 10px; border: 0; border-radius: 4px; background: var(--ink); color: var(--surface); cursor: pointer; font-size: 10px; transition: opacity .18s ease, transform .18s ease, background .18s ease; }
 .add-submit:disabled { opacity: .42; }
